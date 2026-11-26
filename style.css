@@ -1,0 +1,250 @@
+• {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+body {
+background: #090b16;
+color: white;
+font-family: Arial, sans-serif;
+}
+
+header {
+min-height: 75px;
+padding: 18px 9%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: #101326;
+border-bottom: 1px solid #292d49;
+}
+
+.logo {
+color: white;
+font-size: 23px;
+font-weight: 900;
+text-decoration: none;
+}
+
+.logo span {
+color: #a66aff;
+}
+
+nav a {
+color: #c4c6d6;
+text-decoration: none;
+margin-left: 25px;
+}
+
+nav a:hover {
+color: #a66aff;
+}
+
+.hero {
+min-height: 480px;
+display: flex;
+align-items: center;
+padding: 70px 12%;
+background:
+radial-gradient(ellipse at 80% 30%, #49218a 0%, transparent 45%),
+linear-gradient(120deg, #101326, #17102d);
+}
+
+.hero-content {
+max-width: 650px;
+}
+
+.badge {
+color: #d0adff;
+background: #38215b;
+padding: 10px 16px;
+border-radius: 30px;
+font-size: 12px;
+letter-spacing: 2px;
+}
+
+.hero h1 {
+font-size: clamp(40px, 6vw, 65px);
+margin: 28px 0;
+line-height: 1.1;
+}
+
+.hero h1 span {
+color: #a66aff;
+}
+
+.hero p {
+color: #b7bad0;
+font-size: 18px;
+margin-bottom: 30px;
+line-height: 1.7;
+}
+
+.button {
+display: inline-block;
+background: linear-gradient(90deg, #7439d9, #a34df5);
+color: white;
+padding: 15px 25px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+font-size: 13px;
+transition: 0.3s;
+}
+
+.button:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 25px #803de866;
+}
+
+.section {
+padding: 85px 10%;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 45px;
+}
+
+.section-title span {
+color: #a66aff;
+letter-spacing: 3px;
+font-size: 12px;
+font-weight: bold;
+}
+
+.section-title h2 {
+font-size: 35px;
+margin: 15px 0;
+}
+
+.section-title p {
+color: #a8abc0;
+}
+
+.game-card {
+max-width: 850px;
+margin: auto;
+display: flex;
+align-items: center;
+gap: 35px;
+padding: 30px;
+background: #15192c;
+border: 1px solid #303452;
+border-radius: 18px;
+}
+
+.game-image {
+min-width: 180px;
+height: 180px;
+border-radius: 14px;
+background: linear-gradient(135deg, #5426a1, #171b38);
+display: grid;
+place-items: center;
+font-size: 75px;
+}
+
+.tag {
+color: #b58aff;
+font-size: 11px;
+letter-spacing: 2px;
+}
+
+.game-info h3 {
+font-size: 25px;
+margin: 14px 0;
+}
+
+.game-info p {
+color: #b5b8ca;
+line-height: 1.6;
+margin-bottom: 22px;
+}
+
+.tutorial {
+background: #101326;
+}
+
+.steps {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.step {
+padding: 30px;
+background: #191d32;
+border: 1px solid #303452;
+border-radius: 15px;
+}
+
+.number {
+color: #a66aff;
+font-size: 38px;
+font-weight: 900;
+margin-bottom: 20px;
+}
+
+.step h3 {
+font-size: 15px;
+margin-bottom: 15px;
+}
+
+.step p {
+color: #b5b8ca;
+line-height: 1.7;
+font-size: 14px;
+}
+
+footer {
+text-align: center;
+padding: 40px 20px;
+background: #080a13;
+border-top: 1px solid #252b49;
+}
+
+footer p {
+color: #888ba1;
+font-size: 13px;
+margin-top: 15px;
+}
+
+footer .small {
+font-size: 11px;
+}
+
+@media (max-width: 700px) {
+header {
+padding: 18px 5%;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+nav a {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.hero {
+    padding: 70px 7%;
+}
+
+.section {
+    padding: 60px 6%;
+}
+
+.game-card {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.game-image {
+    width: 100%;
+}
+
+.steps {
+    grid-template-columns: 1fr;
+}
+}
