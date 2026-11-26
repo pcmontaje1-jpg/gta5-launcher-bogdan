@@ -1,81 +1,121 @@
 <!DOCTYPE html>
-<html lang=«es»>
+<html lang="es">
 <head>
-<meta charset=«UTF-8»>
-<meta name=«viewport» content=«width=device-width, initial-scale=1.0»>
-<title>GTA 5 LAUNCHER BOGDAN</title>
-<link rel=«stylesheet» href=«style.css»>
-<script src=«script.js» defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTA V Launcher Bogdan — Grand Theft Auto V Legacy Edition</title>
+  <meta name="description" content="Descarga GTA V Legacy Edition y consulta la guía de instalación paso a paso.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class=«hero» id=«inicio»>
-    <div class=«overlay»></div>
-<header>
-    <div class=«logo»>GTA <span>V</span> LEGACY</div>
-    <nav>
-        <a href=«#descarga»>DESCARGA</a>
-        <a href=«#tutorial»>INSTALACIÓN</a>
-    </nav>
-</header>
 
-<main class=«hero-content»>
-    <p class=«eyebrow»>BIENVENIDO A LOS SANTOS</p>
-    <h1>GRAND THEFT<br><span>AUTO V</span></h1>
-    <p class=«subtitle»>LEGACY EDITION</p>
-    <p class=«description»>Toda la información y la guía de instalación en un solo lugar.</p>
-
-    <div class=«hero-buttons»>
-        <a href=«#descarga» class=«btn primary»>DESCARGAR JUEGO</a>
-        <a href=«#tutorial» class=«btn secondary»>VER TUTORIAL</a>
+  <!-- Navegación -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo">GTA V <span>Bogdan</span></a>
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#descarga">Descarga</a>
+        <a href="#tutorial">Tutorial</a>
+      </nav>
     </div>
-</main>
+  </header>
 
-<div class=«scroll»>DESLIZA PARA DESCUBRIR ↓</div>
-</section>
-<section class=«download section» id=«descarga»>
-    <p class=«eyebrow»>CENTRO DE DESCARGAS</p>
-    <h2>GTA V <span>LEGACY</span></h2>
-    <div class=«download-card»>
-        <div class=«game-icon»>GTA V</div>
-        <div>
-            <h3>Grand Theft Auto V Legacy</h3>
-            <p>Descarga el archivo desde una fuente autorizada.</p>
-            <p class=«file-size»>TAMAÑO: POR CONFIRMAR</p>
-            <a href=«TU_ENLACE_DE_DESCARGA» class=«btn primary»>DESCARGAR AHORA ↓</a>
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">GRAND THEFT AUTO V</h1>
+      <p class="hero-subtitle">LEGACY EDITION</p>
+      <p class="hero-text">
+        Bienvenido a Los Santos. Descarga los archivos del juego y sigue la guía paso a paso para empezar tu aventura.
+      </p>
+      <div class="hero-buttons">
+        <a href="#descarga" class="btn btn-primary">DESCARGAR JUEGO</a>
+        <a href="#tutorial" class="btn btn-secondary">VER TUTORIAL</a>
+      </div>
+    </div>
+    <a href="#descarga" class="scroll-down" aria-label="Desplazarse hacia abajo">▼</a>
+  </section>
+
+  <!-- Descarga -->
+  <section id="descarga" class="section download-section">
+    <div class="container">
+      <h2 class="section-title">Descargar <span>GTA V Legacy</span></h2>
+      <p class="section-subtitle">Todo lo que necesitas para empezar tu experiencia en Los Santos.</p>
+
+      <div class="download-card">
+        <div class="download-info">
+          <h3>GTA V Legacy Edition</h3>
+          <ul class="download-list">
+            <li><span>Tamaño:</span> aproximadamente 120–130 GB</li>
+            <li><span>Contenido:</span> archivos del juego base y recursos esenciales</li>
+            <li><span>Formato:</span> archivos comprimidos listos para instalar</li>
+          </ul>
+          <p class="download-note">
+            Descarga los archivos completos y verifica que tengas suficiente espacio libre en tu disco antes de comenzar.
+          </p>
         </div>
+        <a href="TU_ENLACE_DE_DESCARGA" class="btn btn-primary btn-large" id="download-btn">DESCARGAR AHORA</a>
+      </div>
     </div>
-</section>
-<section class=«tutorial section» id=«tutorial»>
-    <p class=«eyebrow»>GUÍA PASO A PASO</p>
-    <h2>GUÍA DE <span>INSTALACIÓN</span></h2>
-    <p class=«intro»>Sigue las instrucciones para preparar el juego.</p>
-<div class=«steps»>
-    <article class=«step»>
-        <img src=«images/paso-1.jpg» alt=«Paso 1» onerror=«this.style.display=‘none’»>
-        <div class=«step-number»>01</div>
-        <h3>DESCARGAR</h3>
-        <p>Descarga el archivo desde el botón de arriba.</p>
-    </article>
+  </section>
 
-    <article class=«step»>
-        <img src=«images/paso-2.jpg» alt=«Paso 2» onerror=«this.style.display=‘none’»>
-        <div class=«step-number»>02</div>
-        <h3>EXTRAER</h3>
-        <p>Extrae los archivos en una carpeta de tu ordenador.</p>
-    </article>
+  <!-- Tutorial -->
+  <section id="tutorial" class="section tutorial-section">
+    <div class="container">
+      <h2 class="section-title">Guía de <span>instalación</span></h2>
+      <p class="section-subtitle">Sigue estos pasos para instalar el juego correctamente.</p>
 
-    <article class=«step»>
-        <img src=«images/paso-3.jpg» alt=«Paso 3» onerror=«this.style.display=‘none’»>
-        <div class=«step-number»>03</div>
-        <h3>INICIAR</h3>
-        <p>Consulta las instrucciones oficiales para iniciar el juego.</p>
-    </article>
-</div>
-</section>
-<footer>
-    <div class=«logo»>GTA V <span>LAUNCHER BOGDAN</span></div>
-    <p>© 2026 · SITIO INDEPENDIENTE</p>
-    <p>Este sitio no está afiliado a Rockstar Games.</p>
-</footer>
+      <div class="steps">
+        <article class="step">
+          <div class="step-image-wrapper">
+            <img src="images/paso-1.jpg" alt="Paso 1: Descargar los archivos" onerror="this.style.visibility='hidden'">
+          </div>
+          <div class="step-content">
+            <span class="step-number">01</span>
+            <h3>Descarga los archivos</h3>
+            <p>Haz clic en «Descargar ahora» y espera a que se completen todos los archivos. No cierres la ventana mientras la descarga esté en curso.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-image-wrapper">
+            <img src="images/paso-2.jpg" alt="Paso 2: Extraer los archivos" onerror="this.style.visibility='hidden'">
+          </div>
+          <div class="step-content">
+            <span class="step-number">02</span>
+            <h3>Extrae los archivos</h3>
+            <p>Con un programa como WinRAR o 7-Zip, extrae todos los archivos comprimidos en una carpeta con suficiente espacio libre.</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-image-wrapper">
+            <img src="images/paso-3.jpg" alt="Paso 3: Ejecutar el juego" onerror="this.style.visibility='hidden'">
+          </div>
+          <div class="step-content">
+            <span class="step-number">03</span>
+            <h3>Ejecuta el juego</h3>
+            <p>Abre la carpeta extraída y ejecuta el archivo principal. Sigue las instrucciones en pantalla y empieza a jugar.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>GTA V Launcher Bogdan — Proyecto de fans. Grand Theft Auto V es una marca de Rockstar Games.</p>
+      <p>© <span id="year"></span> Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
