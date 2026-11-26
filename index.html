@@ -1,75 +1,81 @@
 <!DOCTYPE html>
-<html lang=“es”>
+<html lang=«es»>
 <head>
-<meta charset=“UTF-8”>
-<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
-<title>MY GAME CLOUD</title>
-<link rel=“stylesheet” href=“style.css”>
-<script src=“script.js” defer></script>
+<meta charset=«UTF-8»>
+<meta name=«viewport» content=«width=device-width, initial-scale=1.0»>
+<title>GTA 5 LAUNCHER BOGDAN</title>
+<link rel=«stylesheet» href=«style.css»>
+<script src=«script.js» defer></script>
 </head>
 <body>
+<section class=«hero» id=«inicio»>
+    <div class=«overlay»></div>
 <header>
-    <a class=“logo” href=“#inicio”>MY GAME <span>CLOUD</span></a>
+    <div class=«logo»>GTA <span>V</span> LEGACY</div>
     <nav>
-        <a href=“#inicio”>Inicio</a>
-        <a href=“#juegos”>Juegos</a>
-        <a href=“#tutorial”>Tutorial</a>
+        <a href=«#descarga»>DESCARGA</a>
+        <a href=«#tutorial»>INSTALACIÓN</a>
     </nav>
 </header>
-<section class=“hero” id=“inicio”>
-    <div class=“hero-content”>
-        <span class=“badge”>🎮 GAMING CENTER</span>
-        <h1>Tu mundo de <span>videojuegos</span></h1>
-        <p>Descubre juegos, guías y novedades en un solo lugar.</p>
-        <a href=“#juegos” class=“button”>EXPLORAR JUEGOS ↓</a>
+
+<main class=«hero-content»>
+    <p class=«eyebrow»>BIENVENIDO A LOS SANTOS</p>
+    <h1>GRAND THEFT<br><span>AUTO V</span></h1>
+    <p class=«subtitle»>LEGACY EDITION</p>
+    <p class=«description»>Toda la información y la guía de instalación en un solo lugar.</p>
+
+    <div class=«hero-buttons»>
+        <a href=«#descarga» class=«btn primary»>DESCARGAR JUEGO</a>
+        <a href=«#tutorial» class=«btn secondary»>VER TUTORIAL</a>
+    </div>
+</main>
+
+<div class=«scroll»>DESLIZA PARA DESCUBRIR ↓</div>
+</section>
+<section class=«download section» id=«descarga»>
+    <p class=«eyebrow»>CENTRO DE DESCARGAS</p>
+    <h2>GTA V <span>LEGACY</span></h2>
+    <div class=«download-card»>
+        <div class=«game-icon»>GTA V</div>
+        <div>
+            <h3>Grand Theft Auto V Legacy</h3>
+            <p>Descarga el archivo desde una fuente autorizada.</p>
+            <p class=«file-size»>TAMAÑO: POR CONFIRMAR</p>
+            <a href=«TU_ENLACE_DE_DESCARGA» class=«btn primary»>DESCARGAR AHORA ↓</a>
+        </div>
     </div>
 </section>
-<section class=“section” id=“juegos”>
-    <div class=“section-title”>
-        <span>NUESTRA COLECCIÓN</span>
-        <h2>Centro de juegos</h2>
-        <p>Información y recursos para tus juegos favoritos.</p>
-    </div>
-<article class=“game-card”>
-    <div class=“game-image”>🎮</div>
-    <div class=“game-info”>
-        <span class=“tag”>ACCIÓN · AVENTURA</span>
-        <h3>Grand Theft Auto V Legacy</h3>
-        <p>Descubre información del juego y consulta la guía de instalación.</p>
-        <a class=“button” href=“https://www.rockstargames.com/gta-v” target=“_blank” rel=“noopener”>
-            VISITAR WEB OFICIAL ↗
-        </a>
-    </div>
-</article>
-</section>
-<section class=“section tutorial” id=“tutorial”>
-    <div class=“section-title”>
-        <span>GUÍA PASO A PASO</span>
-        <h2>Cómo empezar</h2>
-        <p>Sigue estos pasos para preparar tu juego.</p>
-    </div>
-<div class=“steps”>
-    <article class=“step”>
-        <div class=“number”>01</div>
+<section class=«tutorial section» id=«tutorial»>
+    <p class=«eyebrow»>GUÍA PASO A PASO</p>
+    <h2>GUÍA DE <span>INSTALACIÓN</span></h2>
+    <p class=«intro»>Sigue las instrucciones para preparar el juego.</p>
+<div class=«steps»>
+    <article class=«step»>
+        <img src=«images/paso-1.jpg» alt=«Paso 1» onerror=«this.style.display=‘none’»>
+        <div class=«step-number»>01</div>
         <h3>DESCARGAR</h3>
-        <p>Consigue el juego desde una tienda oficial autorizada.</p>
+        <p>Descarga el archivo desde el botón de arriba.</p>
     </article>
-    <article class=“step”>
-        <div class=“number”>02</div>
-        <h3>INSTALAR</h3>
-        <p>Sigue las instrucciones oficiales de instalación.</p>
+
+    <article class=«step»>
+        <img src=«images/paso-2.jpg» alt=«Paso 2» onerror=«this.style.display=‘none’»>
+        <div class=«step-number»>02</div>
+        <h3>EXTRAER</h3>
+        <p>Extrae los archivos en una carpeta de tu ordenador.</p>
     </article>
-    <article class=“step”>
-        <div class=“number”>03</div>
-        <h3>¡A JUGAR!</h3>
-        <p>Inicia el juego desde su launcher oficial y disfruta.</p>
+
+    <article class=«step»>
+        <img src=«images/paso-3.jpg» alt=«Paso 3» onerror=«this.style.display=‘none’»>
+        <div class=«step-number»>03</div>
+        <h3>INICIAR</h3>
+        <p>Consulta las instrucciones oficiales para iniciar el juego.</p>
     </article>
 </div>
 </section>
 <footer>
-    <a class=“logo” href=“#inicio”>MY GAME <span>CLOUD</span></a>
-    <p>© 2026 MY GAME CLOUD. Todos los derechos reservados.</p>
-    <p class=“small”>Sitio independiente. No está afiliado a Rockstar Games.</p>
+    <div class=«logo»>GTA V <span>LAUNCHER BOGDAN</span></div>
+    <p>© 2026 · SITIO INDEPENDIENTE</p>
+    <p>Este sitio no está afiliado a Rockstar Games.</p>
 </footer>
 </body>
 </html>
