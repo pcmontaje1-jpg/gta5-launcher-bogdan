@@ -3,19 +3,45 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Enlace de descarga (muestra aviso si aún es el placeholder)
+  // --- Логика кнопки скачивания ---
   const downloadBtn = document.getElementById('download-btn');
+  
+  // Создаем красивое модальное окно программно (чтобы не засорять HTML)
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  modal.innerHTML = `
+    <div class="modal-box">
+      <h3>Muy pronto</h3>
+      <p>El enlace de descarga estará disponible muy pronto. ¡Gracias por tu paciencia!</p>
+      <button class="btn btn-primary" id="close-modal">ENTENDIDO</button>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  const closeModalBtn = document.getElementById('close-modal');
+
+  const closeModal = () => modal.classList.remove('active');
+  closeModalBtn.addEventListener('click', closeModal);
+  
+  // Закрытие при клике мимо окна
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // Проверка ссылки перед переходом
   if (downloadBtn) {
     downloadBtn.addEventListener('click', (e) => {
       const href = downloadBtn.getAttribute('href');
+      // Если ссылка не изменена — блокируем переход и показываем окно
       if (!href || href === 'TU_ENLACE_DE_DESCARGA' || href === '#') {
         e.preventDefault();
-        alert('El enlace de descarga estará disponible muy pronto. ¡Gracias por tu paciencia!');
+        modal.classList.add('active');
       }
+      // Если ссылка реальная — браузер сам откроет её в новой вкладке (target="_blank")
     });
   }
 
-  // Animación de aparición al hacer scroll (Intersection Observer)
+  // Анимация появления при скролле
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
