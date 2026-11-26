@@ -15,23 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Lógica del Slider (Cambio de fondo)
-  const slides = document.querySelectorAll('.slide');
-  let currentSlide = 0;
-  const slideInterval = 8500; // 8.5 секунд (в пределах 8-10 сек, как ты просила)
-
-  function nextSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-  }
-
-  // Запускаем смену каждые 8.5 секунд
-  if (slides.length > 0) {
-    setInterval(nextSlide, slideInterval);
-  }
-
-  // Animación de aparición al hacer scroll
+  // Animación de aparición al hacer scroll (Intersection Observer)
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
